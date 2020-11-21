@@ -1,4 +1,3 @@
 (sym_lib_table
   (lib (name pl_logo)(type Legacy)(uri ${KIPRJMOD}/lib_sch/pl_logo/pl_logo.lib)(options "")(descr ""))
-  (lib (name pl_arduino)(type Legacy)(uri ${KIPRJMOD}/lib_sch/pl_arduino.lib)(options "")(descr ""))
 )
