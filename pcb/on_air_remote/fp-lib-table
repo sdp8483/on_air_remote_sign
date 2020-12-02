@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name pl_Arduino)(type KiCad)(uri ${KIPRJMOD}/lib_fp/pl_Arduino.pretty)(options "")(descr ""))
+  (lib (name pl_Tactile_Switch_SMD)(type KiCad)(uri ${KIPRJMOD}/lib_fp/pl_Tactile_Switch_SMD.pretty)(options "")(descr ""))
+)

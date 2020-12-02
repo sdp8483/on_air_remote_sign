@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name pl_Arduino)(type Legacy)(uri ${KIPRJMOD}/lib_sch/pl_Arduino/pl_Arduino.lib)(options "")(descr ""))
+)
