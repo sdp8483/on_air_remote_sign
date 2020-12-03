@@ -333,9 +333,7 @@ Wire Wire Line
 	5150 1000 5550 1000
 NoConn ~ 4750 1000
 NoConn ~ 4750 1100
-Wire Wire Line
-	4750 1500 5200 1500
-Text Label 5200 1500 2    50   ~ 0
+Text Label 5200 2800 2    50   ~ 0
 SHUTDOWN
 Wire Wire Line
 	2800 1850 3300 1850
@@ -344,7 +342,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 3650 5200 3650
 Wire Wire Line
-	5200 3650 5200 1500
+	5200 3650 5200 2800
 $Comp
 L power:GND #PWR019
 U 1 1 5FD1B6F5
@@ -362,7 +360,6 @@ NoConn ~ 4750 1800
 NoConn ~ 4750 1900
 NoConn ~ 4750 2600
 NoConn ~ 4750 2700
-NoConn ~ 4750 2800
 NoConn ~ 4750 2900
 NoConn ~ 4750 3000
 NoConn ~ 4750 3100
@@ -525,11 +522,11 @@ Wire Wire Line
 Wire Wire Line
 	5500 3050 5500 3000
 Wire Wire Line
-	4750 2500 5000 2500
+	4750 2500 5350 2500
 Wire Wire Line
-	5000 2500 5000 3000
+	5350 2500 5350 3000
 Wire Wire Line
-	5000 3000 5500 3000
+	5350 3000 5500 3000
 Connection ~ 5500 3000
 Wire Wire Line
 	5500 3000 5500 2950
@@ -731,4 +728,7 @@ $EndComp
 Wire Wire Line
 	3500 1400 3500 1300
 Connection ~ 3500 1300
+Wire Wire Line
+	5200 2800 4750 2800
+NoConn ~ 4750 1500
 $EndSCHEMATC
