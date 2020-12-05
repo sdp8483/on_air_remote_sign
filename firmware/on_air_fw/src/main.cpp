@@ -10,6 +10,7 @@
 #define BLUE_PIN        6     // pin that controls blue LEDs
 #define ROLE_PIN        2     // pull down to set unit as transmitter, leave floating to set unit as receiver
 #define SHUTDOWN_PIN    A3    // on transmitter, used to turn off unit after sending message
+#define V_EXT_PIN       A0    // monitor for USB power
 
 /* function prototypes */
 void set_leds(int state);
@@ -57,7 +58,9 @@ void setup() {
     }
 
     pinMode(SHUTDOWN_PIN, OUTPUT);
-    digitalWrite(SHUTDOWN_PIN, HIGH);
+    if (analogRead(V_EXT_PIN) < 100) {    // dont pull pin high if external power is connected
+      digitalWrite(SHUTDOWN_PIN, HIGH);
+    }
   } else {
     Serial.println(F("Role is Receiver"));
     radio.openReadingPipe(1, pipe);
