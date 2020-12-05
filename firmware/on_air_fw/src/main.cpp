@@ -90,7 +90,11 @@ void loop() {
     Serial.println();
 
     // send the data
-    bool ok = radio.write( led_states, num_led_pins);
+    bool ok = false;
+    while (!ok) {
+      ok = radio.write( led_states, num_led_pins);
+    }
+     
 
     Serial.print(F("Data Tx is "));
     if (ok) {
